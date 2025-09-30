@@ -1,6 +1,6 @@
-import type { UserRole } from '../types';
-import { Button } from './ui/button';
-import { Card } from './ui/card';
+import type { UserRole } from '../services/models/types';
+import { Button } from '../components/ui/button';
+import { Card } from '../components/ui/card';
 import { Users, UserCheck, Shield, Crown } from 'lucide-react';
 
 interface LandingPageProps {
