@@ -1,9 +1,9 @@
 import { createRoot } from "react-dom/client";
 import { BrowserRouter, Routes, Route, useNavigate } from "react-router-dom";
 import App from "./App.tsx";
-import AddCandidatePage from "./components/AddCandidatePage";
-import AddClientPage from "./components/AddClientPage";
-import AddRecruiterPage from "./components/AddRecruiterPage";
+import AddCandidatePage from "./pages/AddCandidatePage";
+import AddClientPage from "./pages/AddClientPage";
+import AddRecruiterPage from "./pages/AddRecruiterPage";
 import "./index.css";
 
 function AddCandidateRoute() {
