@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { toast } from 'sonner@2.0.3';
 import { useReminders } from '../context/RemindersContext';
-import type { User } from '../types';
+import type { User } from '../services/models/types';
 
 export function ReminderWatcher({ user }: { user: User }) {
   const { reminders } = useReminders();
