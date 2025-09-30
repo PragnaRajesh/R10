@@ -37,8 +37,8 @@ export function LandingPage({ onRoleSelect }: LandingPageProps) {
 
         {/* Role Selection Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-          {roles.map((role) => {
-            const IconComponent = role.icon;
+          {roleCards.map((role) => {
+            const IconComponent = roleIcons[role.id];
             return (
               <Card 
                 key={role.id}
