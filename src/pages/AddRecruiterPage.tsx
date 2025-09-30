@@ -1,7 +1,7 @@
 import React from 'react';
-import { Button } from './ui/button';
+import { Button } from '../components/ui/button';
 import { ArrowLeft } from 'lucide-react';
-import { RecruiterForm, RecruiterFormData } from './RecruiterForm';
+import { RecruiterForm, RecruiterFormData } from '../components/RecruiterForm';
 
 interface AddRecruiterPageProps {
   onBack: () => void;
