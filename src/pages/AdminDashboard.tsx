@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import type { User } from '../types';
-import { Card } from './ui/card';
+import type { User } from '../services/models/types';
+import { Card } from '../components/ui/card';
 import { Badge } from './ui/badge';
 import { Button } from './ui/button';
 import { Progress } from './ui/progress';
@@ -31,17 +31,17 @@ import {
   BarChart3
 } from 'lucide-react';
 import { LineChart, Line, XAxis, YAxis, Tooltip, ResponsiveContainer, AreaChart, Area, BarChart, Bar } from 'recharts';
-import ClientRecruiterMatrix from './ClientRecruiterMatrix';
-import MoneyFall from './ui/MoneyFall';
-import RoleActionBar from './RoleActionBar';
-import { Input } from './ui/input';
-import AddEntitySheet from './ui/AddEntitySheet';
-import { Label } from './ui/label';
-import { Textarea } from './ui/textarea';
+import ClientRecruiterMatrix from '../components/ClientRecruiterMatrix';
+import MoneyFall from '../components/ui/MoneyFall';
+import RoleActionBar from '../components/RoleActionBar';
+import { Input } from '../components/ui/input';
+import AddEntitySheet from '../components/ui/AddEntitySheet';
+import { Label } from '../components/ui/label';
+import { Textarea } from '../components/ui/textarea';
 import { Save } from 'lucide-react';
-import { CandidateForm } from './CandidateForm';
-import { ClientForm } from './ClientForm';
-import { RecruiterForm } from './RecruiterForm';
+import { CandidateForm } from '../components/CandidateForm';
+import { ClientForm } from '../components/ClientForm';
+import { RecruiterForm } from '../components/RecruiterForm';
 
 interface AdminDashboardProps {
   user: User;
