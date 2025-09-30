@@ -1,14 +1,14 @@
-import type { User } from '../types';
-import { Card } from './ui/card';
-import MoneyFall from './ui/MoneyFall';
-import { Badge } from './ui/badge';
-import { Button } from './ui/button';
-import { Progress } from './ui/progress';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from './ui/select';
-import { Avatar, AvatarFallback } from './ui/avatar';
-import { Input } from './ui/input';
-import { Label } from './ui/label';
-import { Textarea } from './ui/textarea';
+import type { User } from '../services/models/types';
+import { Card } from '../components/ui/card';
+import MoneyFall from '../components/ui/MoneyFall';
+import { Badge } from '../components/ui/badge';
+import { Button } from '../components/ui/button';
+import { Progress } from '../components/ui/progress';
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '../components/ui/select';
+import { Avatar, AvatarFallback } from '../components/ui/avatar';
+import { Input } from '../components/ui/input';
+import { Label } from '../components/ui/label';
+import { Textarea } from '../components/ui/textarea';
 import {
   Users,
   TrendingUp,
@@ -28,9 +28,9 @@ import {
   Save
 } from 'lucide-react';
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, LineChart, Line, PieChart, Pie, Cell } from 'recharts';
-import ClientRecruiterMatrix from './ClientRecruiterMatrix';
-import RoleActionBar from './RoleActionBar';
-import AddEntitySheet from './ui/AddEntitySheet';
+import ClientRecruiterMatrix from '../components/ClientRecruiterMatrix';
+import RoleActionBar from '../components/RoleActionBar';
+import AddEntitySheet from '../components/ui/AddEntitySheet';
 
 interface TeamLeadDashboardProps {
   user: User;
