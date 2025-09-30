@@ -7,36 +7,14 @@ interface LandingPageProps {
   onRoleSelect: (role: UserRole) => void;
 }
 
-const roles = [
-  {
-    id: 'recruiter' as UserRole,
-    title: 'Recruiter',
-    description: 'Access your recruitment dashboard, manage candidates, and track performance',
-    icon: Users,
-    color: 'bg-blue-50 hover:bg-blue-100 border-blue-200'
-  },
-  {
-    id: 'teamlead' as UserRole,
-    title: 'Team Lead',
-    description: 'Monitor team performance, review reports, and manage recruitment teams',
-    icon: UserCheck,
-    color: 'bg-indigo-50 hover:bg-indigo-100 border-indigo-200'
-  },
-  {
-    id: 'manager' as UserRole,
-    title: 'Manager',
-    description: 'Strategic oversight, department analytics, and resource management',
-    icon: Shield,
-    color: 'bg-purple-50 hover:bg-purple-100 border-purple-200'
-  },
-  {
-    id: 'admin' as UserRole,
-    title: 'Admin',
-    description: 'Full system access, user management, and organizational insights',
-    icon: Crown,
-    color: 'bg-orange-50 hover:bg-orange-100 border-orange-200'
-  }
-];
+import { roleCards } from '../data/roles';
+
+const roleIcons = {
+  recruiter: Users,
+  teamlead: UserCheck,
+  manager: Shield,
+  admin: Crown,
+} as const;
 
 export function LandingPage({ onRoleSelect }: LandingPageProps) {
   return (
