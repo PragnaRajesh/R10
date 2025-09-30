@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState, type FormEvent } from 'react';
-import type { User } from '../types';
+import type { User } from '../services/models/types';
 import { SharedDashboard } from './SharedDashboard';
 import { ActionKey } from './RoleActionBar';
 import { Button } from './ui/button';
