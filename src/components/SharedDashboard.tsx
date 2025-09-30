@@ -5,7 +5,7 @@ import { FileText, UserPlus, Building2 } from 'lucide-react';
 import { CandidateTable } from './CandidateTable';
 import MoneyFall from './ui/MoneyFall';
 import ClientRecruiterMatrix from './ClientRecruiterMatrix';
-import type { UserRole } from '../types';
+import type { UserRole } from '../services/models/types';
 import { roleActionKeys } from './RoleActionBar';
 
 const kpiData = [
