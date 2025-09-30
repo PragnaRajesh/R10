@@ -1,5 +1,5 @@
 import React from 'react';
-import type { UserRole } from '../types';
+import type { UserRole } from '../services/models/types';
 import { Button } from './ui/button';
 import { actionLabels, roleActionKeys, type ActionKey } from './RoleActionBar';
 
