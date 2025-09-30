@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import type { User } from '../types'; // ✅ import type from dedicated file
+import type { User } from '../services/models/types'; // ✅ import type from dedicated file
 import { Button } from './ui/button';
 import { Badge } from './ui/badge';
 import { Users, Home, LayoutDashboard, Bell, Calendar, LogOut, ChevronDown } from 'lucide-react';
