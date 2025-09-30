@@ -1,5 +1,5 @@
 import React from 'react';
-import type { User } from '../types';
+import type { User } from '../services/models/types';
 import { Card } from './ui/card';
 import { Avatar, AvatarFallback } from './ui/avatar';
 import {
