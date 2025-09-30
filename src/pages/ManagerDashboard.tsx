@@ -34,6 +34,7 @@ import { Save } from 'lucide-react';
 import { CandidateForm } from '../components/CandidateForm';
 import { RecruiterForm } from '../components/RecruiterForm';
 import { ClientForm } from '../components/ClientForm';
+import '../styles/pages/manager-dashboard.css';
 
 interface ManagerDashboardProps {
   user: User;
@@ -97,7 +98,7 @@ export function ManagerDashboard({ user }: ManagerDashboardProps) {
   };
 
   return (
-    <div className="p-6 space-y-8">
+    <div className="manager-dashboard-page p-6 space-y-8">
       <RoleActionBar role={user.role} onAction={(k) => setActiveForm(k)} showAddActions />
       <AddEntitySheet activeForm={activeForm} onOpenChange={(open) => { if (!open) setActiveForm(null); }} />
 
