@@ -1,6 +1,7 @@
 import type { UserRole } from '../services/models/types';
 import { Button } from '../components/ui/button';
 import { Card } from '../components/ui/card';
+import '../styles/pages/landing.css';
 import { Users, UserCheck, Shield, Crown } from 'lucide-react';
 
 interface LandingPageProps {
@@ -18,7 +19,7 @@ const roleIcons = {
 
 export function LandingPage({ onRoleSelect }: LandingPageProps) {
   return (
-    <div className="min-h-screen bg-gradient-sky flex items-center justify-center p-6">
+    <div className="landing-page min-h-screen bg-gradient-sky flex items-center justify-center p-6">
       <div className="w-full max-w-4xl">
         {/* Header */}
         <div className="text-center mb-12">
