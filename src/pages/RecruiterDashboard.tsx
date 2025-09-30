@@ -32,6 +32,7 @@ import RoleActionBar from '../components/RoleActionBar';
 import { CandidateForm } from '../components/CandidateForm';
 import { ClientForm } from '../components/ClientForm';
 import { RecruiterForm } from '../components/RecruiterForm';
+import '../styles/pages/recruiter-dashboard.css';
 
 interface RecruiterDashboardProps {
   user: User;
@@ -119,7 +120,7 @@ export function RecruiterDashboard({ user }: RecruiterDashboardProps) {
   };
 
   return (
-    <div className="p-6 space-y-8">
+    <div className="recruiter-dashboard-page p-6 space-y-8">
       <RoleActionBar role={user.role} onAction={(k) => setActiveForm(k)} showAddActions />
       <AddEntitySheet activeForm={activeForm} onOpenChange={(open) => { if (!open) setActiveForm(null); }} />
 
