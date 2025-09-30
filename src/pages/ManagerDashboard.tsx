@@ -1,11 +1,11 @@
 import { useState } from 'react';
-import type { User } from '../types';
-import { Card } from './ui/card';
-import MoneyFall from './ui/MoneyFall';
-import { Badge } from './ui/badge';
-import { Button } from './ui/button';
-import { Progress } from './ui/progress';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from './ui/select';
+import type { User } from '../services/models/types';
+import { Card } from '../components/ui/card';
+import MoneyFall from '../components/ui/MoneyFall';
+import { Badge } from '../components/ui/badge';
+import { Button } from '../components/ui/button';
+import { Progress } from '../components/ui/progress';
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '../components/ui/select';
 import { 
   Shield, 
   BarChart3, 
@@ -24,16 +24,16 @@ import {
   Settings
 } from 'lucide-react';
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, LineChart, Line, ComposedChart, Area, AreaChart } from 'recharts';
-import ClientRecruiterMatrix from './ClientRecruiterMatrix';
-import RoleActionBar from './RoleActionBar';
-import AddEntitySheet from './ui/AddEntitySheet';
-import { Input } from './ui/input';
-import { Label } from './ui/label';
-import { Textarea } from './ui/textarea';
+import ClientRecruiterMatrix from '../components/ClientRecruiterMatrix';
+import RoleActionBar from '../components/RoleActionBar';
+import AddEntitySheet from '../components/ui/AddEntitySheet';
+import { Input } from '../components/ui/input';
+import { Label } from '../components/ui/label';
+import { Textarea } from '../components/ui/textarea';
 import { Save } from 'lucide-react';
-import { CandidateForm } from './CandidateForm';
-import { RecruiterForm } from './RecruiterForm';
-import { ClientForm } from './ClientForm';
+import { CandidateForm } from '../components/CandidateForm';
+import { RecruiterForm } from '../components/RecruiterForm';
+import { ClientForm } from '../components/ClientForm';
 
 interface ManagerDashboardProps {
   user: User;
