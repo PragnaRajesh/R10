@@ -1,10 +1,10 @@
 import { useState } from 'react';
-import type { User } from '../types';
-import { Card } from './ui/card';
-import { Button } from './ui/button';
-import { Badge } from './ui/badge';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from './ui/select';
-import { Avatar, AvatarFallback, AvatarImage } from './ui/avatar';
+import type { User } from '../services/models/types';
+import { Card } from '../components/ui/card';
+import { Button } from '../components/ui/button';
+import { Badge } from '../components/ui/badge';
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '../components/ui/select';
+import { Avatar, AvatarFallback, AvatarImage } from '../components/ui/avatar';
 import {
   Users,
   TrendingUp,
@@ -22,16 +22,16 @@ import {
   Save
 } from 'lucide-react';
 import { PieChart, Pie, Cell, ResponsiveContainer, BarChart, Bar, XAxis, YAxis, Tooltip } from 'recharts';
-import { CandidateTable } from './CandidateTable';
-import MoneyFall from './ui/MoneyFall';
-import { Input } from './ui/input';
-import { Label } from './ui/label';
-import { Textarea } from './ui/textarea';
-import ClientRecruiterMatrix from './ClientRecruiterMatrix';
-import RoleActionBar from './RoleActionBar';
-import { CandidateForm } from './CandidateForm';
-import { ClientForm } from './ClientForm';
-import { RecruiterForm } from './RecruiterForm';
+import { CandidateTable } from '../components/CandidateTable';
+import MoneyFall from '../components/ui/MoneyFall';
+import { Input } from '../components/ui/input';
+import { Label } from '../components/ui/label';
+import { Textarea } from '../components/ui/textarea';
+import ClientRecruiterMatrix from '../components/ClientRecruiterMatrix';
+import RoleActionBar from '../components/RoleActionBar';
+import { CandidateForm } from '../components/CandidateForm';
+import { ClientForm } from '../components/ClientForm';
+import { RecruiterForm } from '../components/RecruiterForm';
 
 interface RecruiterDashboardProps {
   user: User;
