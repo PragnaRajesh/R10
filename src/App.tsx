@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { LandingPage } from "./components/LandingPage";
+import { LandingPage } from "./pages/LandingPage";
 import { LoginForm } from "./components/LoginForm";
 import { DashboardHeader } from "./components/DashboardHeader";
 import { SharedHome } from "./components/SharedHome";
@@ -7,7 +7,7 @@ import { RoleBasedDashboard } from "./components/RoleBasedDashboard";
 import { RemindersProvider } from "./context/RemindersContext";
 import { ReminderWatcher } from "./components/ReminderWatcher";
 import { Toaster } from "./components/ui/sonner";
-import type { User, UserRole } from "./types";
+import type { User, UserRole } from "./services/models/types";
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState<
