@@ -1,7 +1,7 @@
 import React from 'react';
-import { Button } from './ui/button';
+import { Button } from '../components/ui/button';
 import { ArrowLeft } from 'lucide-react';
-import { ClientForm, ClientFormData } from './ClientForm';
+import { ClientForm, ClientFormData } from '../components/ClientForm';
 
 interface AddClientPageProps {
   onBack: () => void;
