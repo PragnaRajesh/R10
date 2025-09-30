@@ -31,6 +31,7 @@ import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, LineChart, L
 import ClientRecruiterMatrix from '../components/ClientRecruiterMatrix';
 import RoleActionBar from '../components/RoleActionBar';
 import AddEntitySheet from '../components/ui/AddEntitySheet';
+import '../styles/pages/team-lead-dashboard.css';
 
 interface TeamLeadDashboardProps {
   user: User;
@@ -94,7 +95,7 @@ export function TeamLeadDashboard({ user }: TeamLeadDashboardProps) {
   };
 
   return (
-    <div className="p-6 space-y-8">
+    <div className="team-lead-dashboard-page p-6 space-y-8">
       <RoleActionBar role={user.role} onAction={(k) => setActiveForm(k)} showAddActions />
       <AddEntitySheet activeForm={activeForm} onOpenChange={(open) => { if (!open) setActiveForm(null); }} />
 
