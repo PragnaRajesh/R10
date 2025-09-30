@@ -1,7 +1,7 @@
 import React from 'react';
 import { Users, Target, TrendingUp, Calendar, MessageSquare, Settings } from 'lucide-react';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './ui/card';
-import { Button } from './ui/button';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../components/ui/card';
+import { Button } from '../components/ui/button';
 
 interface HomePageProps {
   userRole: string;
